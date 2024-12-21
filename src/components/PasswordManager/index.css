@@ -1,0 +1,254 @@
+.app-container {
+  min-height: 100vh;
+  background-image: linear-gradient(#9ba9eb, #c3caea);
+  padding: 1.5rem;
+}
+.logo-img {
+  height: 3.5rem;
+  width: 10rem;
+}
+
+.upper-part-container {
+  background-color: #5763a5;
+  border-radius: 6px;
+  margin: 10px 0px;
+  border: none;
+  padding: 20px;
+}
+.sm-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sm-img-container img {
+  max-height: 410px;
+  max-width: 410px;
+}
+.card {
+  background-color: #454f84;
+  padding: 10px 20px;
+  border: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.card h1 {
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 0px;
+  margin: 15px 0px;
+}
+.input-container img {
+  height: 3rem;
+  width: 3rem;
+  padding: 10px;
+  border-right: 1px solid #94a3b8;
+}
+.input-container input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  color: #64748b;
+}
+
+.btn-container {
+  align-self: flex-end;
+}
+.add-btn {
+  padding: 10px 25px;
+  background-color: #0b69ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.md-img-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .upper-part-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sm-img-container {
+    display: none;
+  }
+  .md-img-container {
+    display: flex;
+  }
+  .md-img-container img {
+    height: 400px;
+    width: 380px;
+  }
+}
+
+.lower-part-container {
+  background-color: #5763a5;
+  border-radius: 6px;
+  margin: 10px 0px;
+  border: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.lower-part-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.password-count {
+  display: flex;
+  align-items: center;
+}
+.password-count h1 {
+  color: #fff;
+  font-size: 20px;
+}
+.password-count p {
+  border: solid 1px #fff;
+  padding: 0px 20px;
+  margin-left: 10px;
+  border-radius: 18px;
+  color: #fff;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0px;
+}
+.search-container img {
+  height: 2.5rem;
+  width: 3rem;
+  padding: 7px 12px;
+  margin: 0px;
+  border-right: 1.5px solid #94a3b8;
+}
+.search-container input {
+  margin: 0px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+hr {
+  width: 100%;
+}
+.show-password-container {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin-top: 5px;
+}
+.show-password-container input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+.show-password-container label {
+  color: #fff;
+  font-size: 18px;
+  margin: 0px;
+}
+.no-passwords-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.no-passwords-view img {
+  height: 300px;
+  width: 300px;
+}
+
+.no-passwords-view p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.passwords-view {
+  list-style-type: none;
+  margin: 0px;
+  color: #fff;
+  padding: 0px;
+}
+.passwords-view li {
+  margin: 0px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.profile {
+  margin-right: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dlt-container {
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+.dlt-container img {
+  height: 2rem;
+  width: 2rem;
+}
+.details {
+  display: flex;
+  align-items: center;
+}
+.web-name {
+  font-size: 18px;
+}
+.details-container p {
+  color: #fff;
+  font-size: 15px;
+}
+.details-container img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .passwords-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .passwords-view li {
+    width: 35%;
+  }
+  .details-container img {
+    width: 100px;
+  }
+}
